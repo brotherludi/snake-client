@@ -10,7 +10,6 @@ const setupInput = (conn) => {
 };
 // setup interface to handle user input from stdin
 const handleUserInput = function (key) {
-  console.log("key", key)
   if (key == 'w') {
     connection.write('Move: up');
   }
