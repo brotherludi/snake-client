@@ -28,7 +28,4 @@ const handleUserInput = function (key) {
   }
   if (key == '\u0003') { process.exit(); }
 };
-
-
 module.exports = { setupInput };
-
