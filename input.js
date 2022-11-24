@@ -11,16 +11,16 @@ const setupInput = (conn) => {
 // setup interface to handle user input from stdin
 const handleUserInput = function (key) {
   console.log("key", key)
-  if (key == '\u001B\u005B\u0041') {
+  if (key == 'w') {
     connection.write('Move: up');
   }
-  if (key == '\u001B\u005B\u0043') {
+  if (key == 'd') {
     connection.write('Move: right');
   }
-  if (key == '\u001B\u005B\u0042') {
+  if (key == 's') {
     connection.write('Move: down');
   }
-  if (key == '\u001B\u005B\u0044') {
+  if (key == 'a') {
     connection.write('Move: left');
   }
   if (key == 'm') {
